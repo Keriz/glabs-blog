@@ -11,11 +11,9 @@ export default function Header() {
         </Link>
       </div>
       <div>
-        <Link href="https://github.com/Keriz/glabs-blog">
-          <a aria-label="GLabs Blog Github">
-            <img src='GitHub-Mark-32px.png'/>
-          </a>
-        </Link>
+        <a  href="https://github.com/Keriz/glabs-blog" aria-label="GLabs Blog Github">
+          <img src='GitHub-Mark-32px.png'/>
+        </a>
       </div>
     </header>
   )
