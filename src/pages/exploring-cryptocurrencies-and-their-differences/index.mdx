@@ -1,9 +1,10 @@
 import { guillaume } from '@/authors'
 export const meta = {
-  title: ' A quick dive into cryptocurrencies and their intrinsic discrepencies',
+  title: 'A quick dive into cryptocurrencies and their intrinsic divergences',
   description: `This first article treats fundamental differences between cryptocurrencies`,
   date: '2021-04-12T14:43:59.0Z',
   authors: [guillaume],
+  discussion: 'https://github.com/Keriz/glabs-blog/discussions/1',
 }
 
 <!--excerpt-->
@@ -11,7 +12,7 @@ export const meta = {
 At the time of writing this, there are more than 9200 cryptocurrencies on the listing plateform [CoinMarketCap](https://coinmarketcap.com/all/views/all/).
 What distinguish a token from one another? Why are there so many of them?
 
-<!--excerpt-->
+<!--/excerpt-->
 
 <!--more-->
 
@@ -76,15 +77,14 @@ There's a great number of tokens and they make up the majority of cryptocurrenci
 - TheGraph (GRT) (API for decentralized databases stored on the blockchain) (dApps)
 - MANA, LAND tokens of the centralized game DECENTRALAND (dApps)
 - AAVE (DeFi) which brings concepts of lending, borrowing, earning interests, and flash loans to the DeFi 
-- Tether USD (USDT), stablecoin which is equivalent to the dollar rate.
+- Tether USD (USDT), stablecoin which is a 1:1 equivalent to the dollar rate.
 - ALICE, SUSHI, CHSB, DAI....
 
 Obviously there are many clones or similar projects on the various blockchains which support Smart Contracts. For instance PancakeSwap (CAKE, DeFi) which provides the same features as Uniswap but for the Binance Smart Chain. 
 
-## 2. Forking an exisiting coin/blockchain
+## 2. Forking an existing coin/blockchain
 
 There has been numerous debates on the Bitcoin as the team of developers had diverging opinions that deviated from the original Whitepaper that supposedly set things in stone. As that was opposed to the idea of decentralization, it led to serveral forks of blockchains running in parallel to the Bitcoin which essentialy are copies of it, each of them trying to solve issues with the Bitcoin on several sides (transaction speed, reward per block, anonymity, hash function). 
-
 
 Amongst the famous Bitcoin forks there is:
 - Bitcoin Cash (BCH) (PoW) | more information stored in each mined block, from 1MB to 8MB which leads to more TPS. 
@@ -92,8 +92,7 @@ Amongst the famous Bitcoin forks there is:
 - Litecoin (LTC) (PoW) | hash function is scrypt, not SHA-256 which makes it harder to implement on ASICs and FPGAs
 - Ravencoin (RVN) (PoW) | ASIC/FPGA resistant by design, the hash function alternates every block (algorithm X16R)
 
-All the forks do not originate from Bitcoin. For instance, the Binance Smart Chain which comes from the Bitcoin company is a fork of the Ethereum blockchain. They tweaked a few settings to have higher transactions-per-second (in average, there is a new block every 3 seconds instead of every 13 seconds for Ethereum) and implemented Proof of Autorithy instead of Proof of Work.
-
+All the forks do not originate from Bitcoin. For instance, the Binance Smart Chain which comes from the Binance company is a fork of the Ethereum blockchain. They tweaked a few settings to have higher transactions-per-second (in average, there is a new block every 3 seconds instead of every 13 seconds for Ethereum) and implemented Proof of Autorithy instead of Proof of Work.
 
 ## 3. Developping new blockchain backend
 
