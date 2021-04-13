@@ -10,7 +10,7 @@ const siteUrl = 'https://blog.glabs.com'
 
 const feed = new Feed({
   title: 'GLabs Blog',
-  description: 'All the latest Tailwind CSS news, straight from the team.',
+  description: '---',
   id: siteUrl,
   link: siteUrl,
   language: 'en',
