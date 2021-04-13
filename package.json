@@ -14,15 +14,12 @@
     "@next/mdx": "^9.4.4",
     "@tailwindcss/typography": "^0.1.2",
     "@tailwindcss/ui": "^0.3.0",
-    "autoprefixer": "9.8.4",
+    "autoprefixer": "^10.0.2",
     "next": "9.4.4",
     "react": "16.13.1",
     "react-dom": "16.13.1",
-    "tailwindcss": "^2.0.0",
+    "tailwindcss": "^2.1.1",
     "tinytime": "^0.2.6"
-  },
-  "peerDependencies": {
-    "postcss": "^8.0.0"
   },
   "devDependencies": {
     "@next/bundle-analyzer": "^9.4.4",
