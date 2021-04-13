@@ -21,7 +21,7 @@ export default function Home() {
       </Head>
       <div className="pt-6 pb-8 space-y-2 md:space-y-5">
         <p className="text-lg leading-7 text-gray-500 ">
-          All my latest experiments, straight from my brain. Contact me at guillaume@glabs.ch!
+          All my latest experiments, straight from my brain. Contact me at <span className="hover:text-gray-800 cursor-pointer"><a href="mailto:guillaume@glabs.ch">guillaume@glabs.ch!</a></span>
         </p>
       </div>
       <ul className="divide-y divide-gray-200">
