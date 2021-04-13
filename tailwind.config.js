@@ -4,8 +4,9 @@ const mdx = require('@mdx-js/mdx')
 module.exports = {
   purge: {
     mode: 'all',
-    content: ['./src/**/*.{js,mdx}', './next.config.js'],
+    content: ['./src/**/*.{js,mdx}', './next.config.js', './src/components/*.{js,mdx}'],
     options: {
+      safelist: ['bg-gradient-to-b', 'px-4'],
       extractors: [
         {
           extensions: ['mdx'],
@@ -38,6 +39,7 @@ module.exports = {
       },
       fontFamily: {
         sans: ['Inter var', ...defaultTheme.fontFamily.sans],
+        title: ['PressStart2P'],
       },
       colors: {
         code: {
