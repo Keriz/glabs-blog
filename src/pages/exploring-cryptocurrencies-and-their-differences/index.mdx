@@ -10,7 +10,7 @@ export const meta = {
 <!--excerpt-->
 
 At the time of writing this, there are more than 9200 cryptocurrencies on the listing plateform [CoinMarketCap](https://coinmarketcap.com/all/views/all/).
-What distinguish a token from one another? Why are there so many of them?
+What distinguishes a token from one another? Why are there so many of them?
 
 <!--/excerpt-->
 
@@ -20,7 +20,7 @@ There are many more than those 9200 tokens that exist and are used daily in tran
 
 It is relatively easy to be listed on CoinMarketCap or CoinGecko. The 3 main criterias are the coin value, the marketcap (number of total circulating supply \* coin value) and the daily transactions volume, in USD. Mostly the cryptocurrencies are sorted by their marketcap.
 
-Being listed on buying platforms, this time around to not only display the price but also to allow you to buy the currencies with a standard bank transfer or credit cards,  can be costly (> 1m $) and you need guarantees of commitment and seriousness. One can cite amongst them Binance, Kraken or Coinbase ( the last one launching on the NASDAQ exchange starting April 2021, 14th).
+Being listed on buying platforms, this time around to not only display the price but also to allow you to buy the currencies with a standard bank transfer or credit cards,  can be costly (> 1m $) and requires guarantees of commitment and seriousness. One can cite amongst them Binance, Kraken or Coinbase ( the last one launching on the NASDAQ exchange starting April 2021, 14th).
 
 Cryptocurrencies share different names:
 - coin, when a currency is independent from others and doesn't rely on the existence of other blockchains (ie: BTC, ETH, BNB)
@@ -40,18 +40,18 @@ Amongst them we can cite:
 - function transferFrom(address _from, address _to, uint256 _value) public returns (bool success)
 
 The first allow us to get the total supply of minted coins.
-balanceOf returns the balance (of our token) of a wallet.
+balanceOf returns the balance of our token in a given wallet.
 The last one enables transactions between users so they can send and receive the currency.
 
 Those are the three core functions to implement in the Smart Contract so that the program defines a new ERC-20 token. 
 
-Once the program has been written (meaning our token is defined in shape of a program), we need to deploy it in the Blockchain. "Which Blockchain?", you may wonder. The ERC-20 specification was created for the Etherum network, so this is the only place where you can deploy the token and be sure that it is going to be compatible with all the other programs that use ERC-20 tokens. There are mechanims that allow one to duplicate a token on other blockchains (usually those are prefixed with a W for Wrapped (for instance, WBNB, WETH, WBTC...)) but I am not entirely familiar with them so a future article will dive into this.
+Once the program has been written (meaning our token is defined in shape of a program), we need to deploy it in the Blockchain. "Which Blockchain?", you may wonder. The ERC-20 specification was created for the Etherum network, so this is the only place where you can deploy the token and be sure that it is going to be compatible with all the other programs that use ERC-20 tokens. There are mechanims that allow duplication of a token on other blockchains (usually those are prefixed with a W for Wrapped (for instance, WBNB, WETH, WBTC...)) but I am not entirely familiar with them so a future article will dive into this.
 
-It is compiled into a [bytecode](https://ethervm.io/) (with a different set of instructions than a standard computer), un-readable for humans but lighter in memory size. The deployment of this contract in the blockchain (that is to say sending the contract to all the running nodes in the network and asking them to store our program, which is in essence a transaction) costs. An important reminder is that for Ethereum there is a unit for conversions, the gas, which is used to compute the amount of Ether spent for a specific transaction depending on its size. 
+It is compiled into a [bytecode](https://ethervm.io/) (with a different set of instructions than a standard computer), un-readable for humans but lighter in memory size. The deployment of this contract in the blockchain (that is to say sending the contract to all the running nodes in the network and asking them to store our program, which is in essence a transaction) costs Ether. An important reminder is that for Ethereum there is a unit for conversions, the gas, which is used to compute the amount of Ether spent for a specific transaction depending on its size. 
 
-The atomic unit of Ether is a Wei (10^-18 ETH). The bytecode size is converted into a quantity of gas. The average transaction today costs 21 000 gas. The user initiating the transaction defines a gas price in Ether that he is willing to pay for this transaction. If it's a small number in comparison to the market, the transaction will be slower to process and if it's above his transaction is going to be processed faster. A medium price per unit of gas today is 150 GWei ((10^9 \* 10^-18 \* 150 * 2100 $) = 0.000315 $ per gas). So an average transaction costs 6.615 $. 
+The atomic unit of Ether is a Wei (10^-18 ETH). The bytecode size is converted into a quantity of gas. The average transaction today costs 21 000 gas. The user initiating the transaction defines a gas price in Ether that he is willing to pay for this transaction. If it's a small number in comparison to the market, the transaction will be slower to process and if it's above his transaction is going to be processed faster. A medium price per unit of gas today is 150 GWei (10^9 \* 10^-18 \* 150 * 2100 $ = 0.000315 $ per gas). So an average transaction costs 6.615 $. 
 
-Sending a program is a much larger bytecode, and this requires a huge amount of gas. Typically for deploying several contracts for a token it costs around a hundreds of dollars.
+A program is a much larger bytecode, which requires a huge amount of gas. Typically, deploying several contracts for a tokens costs around a hundreds of dollars.
 
 When a contract is deployed it is assigned an address (as a wallet), and by knowing this address other actors (users, contracts) can interact with it.
 
@@ -61,11 +61,11 @@ There are online websites, explorers, to browse through blockchains. For instanc
 
 It is also possible to look for a block which regroups several transactions validated by nodes. In the block you can see all the transactions it processed. Finally, it is also possible to look for a contrat and see all the interactions it had with other wallets or contracts (as they can interact between eatch other autonomously).
 
-To illustrate my example, glancing at the token [AAVE](https://etherscan.io/token/0x7fc66500c84a76ad7e9c93437bfc5ac33e2ddae9), there is the whole history of transactions on the Ethereum blockchain that had to do with the contract, and we can trace back all the wallets or others contracts that had interecations with our token. Important information displayed also include the number of transactions processed by the contract (here 628 300), number of tokens holders and the total circulating supply.
+To illustrate my example, glancing at the token [AAVE](https://etherscan.io/token/0x7fc66500c84a76ad7e9c93437bfc5ac33e2ddae9), there is the whole history of transactions on the Ethereum blockchain that had to do with the contract, and we can trace back all the wallets or others contracts that had interactions with our token. Important information displayed also include the number of transactions processed by the contract (here 628 300), number of tokens holders and the total circulating supply.
 
 Creating a token that has a purpose requires multiple contracts, the most important one being the ERC-20 compliant one while the others are used to interact with this one.
 
-Usually we want to allow people to buy our token from online exchange platforms (as [Uniswap](https://app.uniswap.org/#/swap) on the Ethereum network). To this end we need to deploy an other contract which will interact with Uniswap contracts (so-called routers) to advert our Token and share its existence to the world. Other people will when be permitted to buy the token on this plateform with other ERC-20 tokens, the amount required depending on our token value.
+Usually we want to allow people to buy our token from online exchange platforms (as [Uniswap](https://app.uniswap.org/#/swap) on the Ethereum network). To this end we need to deploy an other contract which will interact with Uniswap contracts (so-called routers) to advert our token and share its existence to the outer world. Other people will then be permitted to buy the token on this plateform with other ERC-20 tokens, the amount required depending on our token current rate.
 
 More details (technical) can be found [here](https://uniswap.org/docs/v2/smart-contract-integration/quick-start/).
 
@@ -84,7 +84,7 @@ Obviously there are many clones or similar projects on the various blockchains w
 
 ## 2. Forking an existing coin/blockchain
 
-There has been numerous debates on the Bitcoin as the team of developers had diverging opinions that deviated from the original Whitepaper that supposedly set things in stone. As that was opposed to the idea of decentralization, it led to serveral forks of blockchains running in parallel to the Bitcoin which essentialy are copies of it, each of them trying to solve issues with the Bitcoin on several sides (transaction speed, reward per block, anonymity, hash function). 
+There has been numerous debates on the Bitcoin as the team of developers had diverging opinions that deviated from the original Whitepaper that supposedly set things in stone. As that was opposed to the idea of decentralization, it led to several forks of the Bitcoin Blockchain, with then multiple blockchains running in parallel which essentialy are copies of the Bitcoin, each of them trying to solve issues with the Bitcoin on several sides (transaction speed, reward per block, anonymity, hash function). 
 
 Amongst the famous Bitcoin forks there is:
 - Bitcoin Cash (BCH) (PoW) | more information stored in each mined block, from 1MB to 8MB which leads to more TPS. 
@@ -98,7 +98,7 @@ All the forks do not originate from Bitcoin. For instance, the Binance Smart Cha
 
 Sometimes developers find flaws in the blockchains that have deep roots in the technology and hard to solve and repair with simple project forks. Building a new blockchain requires lots of expertise that if found in peer-reviewed scientif research. The sum of several papers can sometime result in new concepts being implemented in new blockchain projects.
 
-Those projects generally require several years of development to reach the public but they can bring technological breakthrough and fresh ideas to the field (as Ethereum did with smart contracts).
+Those projects generally require several years of development to reach the public but they can bring technological breakthrough and fresh ideas to the field (as Ethereum did with Smart Contracts).
 
 Namely, there is for instance:
 -  Chainlink (LINK), for interfacing non decentralized applicaitons and Smarts Chains as BSC or Ethereum (to decentralize)
