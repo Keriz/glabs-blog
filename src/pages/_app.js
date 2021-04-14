@@ -9,7 +9,7 @@ export default function App({ Component, pageProps }) {
       <Head>
         <meta name="msapplication-TileColor" content="#00aba9" />
         <meta name="theme-color" content="#ffffff" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon32x32.png" />
+        <link rel="icon" type="image/png" href="/favicon32x32.png" />
         <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="/feed.xml" />
         <link rel="alternate" type="application/atom+xml" title="Atom 1.0" href="/atom.xml" />
         <link rel="alternate" type="application/json" title="JSON Feed" href="/feed.json" />
