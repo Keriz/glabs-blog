@@ -5,7 +5,7 @@ export default function Header() {
     <header className="flex justify-between items-center py-10">
       <div>
         <Link href="/">
-          <img src='logo.svg' />
+          <img src='logo.svg' width="200px" />
         </Link>
       </div>
       <div>
