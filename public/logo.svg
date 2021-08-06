@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="28.140713mm"
+   height="7.5135627mm"
+   viewBox="0 0 28.140714 7.5135626"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   sodipodi:docname="logo.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="6.2217172"
+     inkscape:cx="47.655654"
+     inkscape:cy="8.5989123"
+     inkscape:window-width="2560"
+     inkscape:window-height="1377"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g59048"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="-1.2" />
+  <defs
+     id="defs2">
+    <rect
+       x="68.148392"
+       y="85.506943"
+       width="421.74854"
+       height="203.80226"
+       id="rect174625" />
+    <filter
+       inkscape:label="Dripping"
+       height="1.212286"
+       width="1.0025108"
+       y="-0.0050544291"
+       x="-0.0012554096"
+       inkscape:menu="Protrusions"
+       inkscape:menu-tooltip="Random paint streaks downwards"
+       style="color-interpolation-filters:sRGB"
+       id="filter46446">
+      <feConvolveMatrix
+         order="3 3"
+         kernelMatrix="0 -1 0 0 -1 0 0 2 0"
+         result="result1"
+         divisor="6.03"
+         id="feConvolveMatrix46424" />
+      <feTurbulence
+         numOctaves="1"
+         baseFrequency="0.078 0.010"
+         result="result0"
+         id="feTurbulence46426" />
+      <feColorMatrix
+         result="result2"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 10 -3.5"
+         id="feColorMatrix46428" />
+      <feComposite
+         in2="result2"
+         in="result1"
+         operator="in"
+         id="feComposite46430" />
+      <feMorphology
+         operator="dilate"
+         radius="1 30"
+         id="feMorphology46432" />
+      <feColorMatrix
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 50 0"
+         result="result3"
+         id="feColorMatrix46434" />
+      <feOffset
+         dx="0"
+         dy="1.4"
+         result="result4"
+         id="feOffset46436" />
+      <feTurbulence
+         numOctaves="2"
+         baseFrequency="0.032 0.025"
+         result="result8"
+         id="feTurbulence46438" />
+      <feColorMatrix
+         values="0 0 0 0 0.52 0 -0.4 0 0 0.45 0 0 1 0 0 0 0 0 1 0"
+         result="result91"
+         id="feColorMatrix46440" />
+      <feDisplacementMap
+         in="result4"
+         xChannelSelector="R"
+         yChannelSelector="G"
+         scale="100"
+         result="result9"
+         in2="result91"
+         id="feDisplacementMap46442" />
+      <feComposite
+         in="SourceGraphic"
+         in2="result9"
+         id="feComposite46444" />
+    </filter>
+  </defs>
+  <g
+     inkscape:label="Layer 1 copy"
+     inkscape:groupmode="layer"
+     id="g59048"
+     transform="translate(-27.771362,-32.708201)">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583;filter:url(#filter46446)"
+       x="27.620491"
+       y="39.867908"
+       id="text59046"><tspan
+         sodipodi:role="line"
+         id="tspan59044"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Calibri;-inkscape-font-specification:Calibri;fill:#808080;stroke-width:0.264583"
+         x="27.620491"
+         y="39.867908"
+         rotate="0 0 0 0 0 0">GLABS</tspan></text>
+  </g>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-27.771362,-32.708201)">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.07;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:markers fill stroke;filter:url(#filter46446)"
+       x="27.429125"
+       y="39.548965"
+       id="text1155"><tspan
+         sodipodi:role="line"
+         id="tspan1153"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Calibri;-inkscape-font-specification:Calibri;fill:#ffffff;stroke:#000000;stroke-width:0.07;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:markers fill stroke"
+         x="27.429125"
+         y="39.548965"
+         rotate="0 0 0 0 0 0"
+         dy="0">GLABS</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="scale(0.26458333)"
+       id="text174623"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect174625);fill:#000000;fill-opacity:1;stroke:none" />
+  </g>
+</svg>
